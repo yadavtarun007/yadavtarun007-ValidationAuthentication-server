@@ -4,7 +4,7 @@ const app = express();
 // const path = require('path');
 // const multer = require('multer');
 
-dotenv.config({path: './config.env'});
+dotenv.config({path: './.env'});
 require('./db/conn');
 //defining the middleware//
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(require('./router/auth'));
 
 const User = require('./model/userSchema');
 app.use('/uploads', express.static('uploads'));
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8000
 
 
 
