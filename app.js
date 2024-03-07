@@ -23,9 +23,6 @@ const PORT = process.env.PORT
 //const DB="mongodb+srv://taruncs1923:Automaxx9990@cluster0.0tfdflm.mongodb.net/MERN?retryWrites=true&w=majority"
 
 
-
- console.log("suck")
-
  app.listen(PORT, ()=>{
     console.log(`server is running on port ${PORT}`);
  });
